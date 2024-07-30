@@ -17,4 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
     inputColor.value = "";
     e.preventDefault();
   });
+
+  newBox = function () {
+    let makeBox = document.createElement("div");
+
+    boxContainer.appendChild(makeBox);
+    makeBox.style.backgroundColor = storedColor;
+    makeBox.className = "box";
+    makeBox.setAttribute("id", boxCounter);
+
+    makeBox.innerText = makeBox.id;
+
+    boxCounter++;
+  };
 });
