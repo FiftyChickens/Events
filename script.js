@@ -34,4 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
     newBox();
   });
 
+  document.addEventListener("dblclick", function (e) {
+    if (e.target.classList.value === "box") {
+      e.target.remove();
+    }
+  });
+
 });
