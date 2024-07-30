@@ -44,4 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  document.addEventListener("mouseover", function (e) {
+    if (e.target.classList.value === "box") {
+      e.target.innerText = `X: ${e.clientX}, Y: ${e.clientY}`;
+    }
+  });
 });
