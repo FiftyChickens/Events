@@ -30,4 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     boxCounter++;
   };
+  boxButton.addEventListener("click", function () {
+    newBox();
+  });
+
 });
