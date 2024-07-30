@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
   boxButton.addEventListener("click", function () {
     newBox();
   });
+  // If key n pressed add new box
+  document.addEventListener("keypress", function (e) {
+    if (e.target.id !== "color-input") {
+      if (e.key.toUpperCase() === "N") {
+        newBox();
+      }
+    }
+  });
 
   // when double click occurse in the document on the box class remove box
   document.addEventListener("dblclick", function (e) {
