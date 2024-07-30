@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // function for making box when button: 'New box' is clicked.
   newBox = function () {
-    let makeBox = document.createElement("div");
+    const makeBox = document.createElement("div");
 
     boxContainer.appendChild(makeBox);
     makeBox.style.backgroundColor = storedColor;
