@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     boxCounter++;
   };
-  // listens for 'New box' button click
+  // if 'New Box' button clicked add new box
   boxButton.addEventListener("click", function () {
     newBox();
   });
