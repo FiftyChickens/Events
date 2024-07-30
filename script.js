@@ -44,9 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // mouseover box will display coordiantes and mouseleave box will return back to id number
   document.addEventListener("mouseover", function (e) {
     if (e.target.classList.value === "box") {
       e.target.innerText = `X: ${e.clientX}, Y: ${e.clientY}`;
     }
+
+    e.target.addEventListener("mouseleave", function (e) {
+      if (e.target.classList.value === "box") {
+        e.target.innerText = e.target.id;
+      }
+    });
   });
 });
