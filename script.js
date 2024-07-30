@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let storedColor = "";
   let boxCounter = 0;
 
+  // sets and stores color of boxses made;
   colorForm.addEventListener("submit", function (e) {
     let allBoxes = document.querySelectorAll("div.box");
     storedColor = inputColor.value;
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
   });
 
+  // function for making box when button: 'New box' is clicked.
   newBox = function () {
     let makeBox = document.createElement("div");
 
@@ -30,10 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     boxCounter++;
   };
+  // listens for 'New box' button click
   boxButton.addEventListener("click", function () {
     newBox();
   });
 
+  // when double click occurse in the document on the box class remove box
   document.addEventListener("dblclick", function (e) {
     if (e.target.classList.value === "box") {
       e.target.remove();
