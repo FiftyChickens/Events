@@ -6,4 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let storedColor = "";
   let boxCounter = 0;
 
+  colorForm.addEventListener("submit", function (e) {
+    let allBoxes = document.querySelectorAll("div.box");
+    storedColor = inputColor.value;
+
+    allBoxes.forEach((element) => {
+      element.style.backgroundColor = storedColor;
+    });
+
+    inputColor.value = "";
+    e.preventDefault();
+  });
 });
