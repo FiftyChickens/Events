@@ -3,5 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const boxButton = document.querySelector("#new-box-button");
   const colorForm = document.getElementById("color-form");
   const inputColor = document.querySelector("#color-input");
+  let storedColor = "";
+  let boxCounter = 0;
 
 });
